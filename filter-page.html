@@ -3,49 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/styles.css">
     <title>Myfilter-page</title>
 
 </head>
+
 <body>
 
-    <h1>Settings</h1>
-    <div>    
-        <div>All settings</div>
-        <div>Published</div>
-        <div>BTC</div>
-        <div>USDT</div>
-        <div>TON</div>
-    </div>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Setting name</th>
-                <th>Status</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <a href="#">Content</a>
-                </td>
-                <td class="status">Draft</td>
-                <td class="delete_icon"><img src="icons/Icon.png" alt="Delete"></td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="#">Content</a>
-                </td>
-                <td class="status">Active</td>
-                <td class="delete_icon"><img src="icons/Icon.png" alt="Delete"></td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="#">Content</a>
-                </td>
-                <td class="status">Active</td>
-                <td class="delete_icon"><img src="icons/Icon.png" alt="Delete"></td>
-            </tr>
-        </tbody>
-    </table>
+    <h1 class="settings">Settings</h1>
+    <section class="container">
+        <div class="menu">    
+            <div class="menu_button mn_active">All settings</div>
+            <div class="menu_button">Published</div>
+            <div class="menu_button">BTC</div>
+            <div class="menu_button">USDT</div>
+            <div class="menu_button">TON</div>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                <div class="s_n">
+                    <th>Setting-name</th>
+                    <th>Status</th>
+                </div>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="content">
+                        <a class="content_link" href="#">Content</a>
+                    </td>
+                    <td class="status">
+                        <div>Draft</div>
+                    </td>
+                    <td>
+                        <img class="delete_icon" src="assets/icons/Icon.png" alt="Delete">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content">
+                        <a class="content_link" href="#">Content</a>
+                    </td>
+                    <td class="status st_active">
+                        <div>Active</div>
+                    </td>
+                    <td>
+                        <img class="delete_icon" src="assets/icons/Icon.png" alt="Delete">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content">
+                        <a class="content_link" href="#">Content</a>
+                    </td>
+                    <td class="status st_active">
+                        <div>Active</div>
+                    </td>
+                    <td>
+                        <img class="delete_icon" src="assets/icons/Icon.png" alt="Delete">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 </body>
 </html>
