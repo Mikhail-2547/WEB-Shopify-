@@ -15,23 +15,8 @@ body {
     margin: 15px;
 }
 
-.menu {
-    background-color: white;
-    width: 100%;
-    display:flex;
-    margin: 15px 0px;
-    border-radius: 8px;
-    box-shadow: -2px 2px 5px rgb(204, 204, 204);
-}
 
-.menu_button {
-    padding: 15px 40px;
-}
 
-.mn_active {
-    border-bottom: 2px solid rgba(26, 55, 26, 0.647);
-    border-bottom-left-radius: 8px;
-}
 
 
 .table {
@@ -74,10 +59,48 @@ th, td {
     padding: 12px;
 }
 
-.menu_button:hover {
-    background-color: rgba(0, 255, 174, 0.393);
-    color: #06342d;
+
+
+.menu {
+    background-color: white;
+    width: 100%;
+    display:flex;
+    margin: 15px 0px;
     border-radius: 8px;
+    /* border-bottom-left-radius: 0;
+    border-top-left-radius: 0; */
+    box-shadow: -2px 2px 5px rgb(204, 204, 204);
+}
+
+.menu_button {
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+
+.menu_button:hover {
+    background-color: rgba(3, 110, 30, 0.61);
+    color: #ffffff;
     cursor:pointer;
     transition: 0.25s;
+}
+
+.menu_button:active {
+    background-color: rgba(7, 94, 66, 0.393);
+    transition: 0;
+}
+
+.menu_radio:first-child + .menu_button {
+    border-radius: 8px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.menu_radio {
+    display: none;
+}
+
+.menu_radio:checked + .menu_button {
+    background-color: #000000;
+    color: #fff;
 }
