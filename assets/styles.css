@@ -82,7 +82,7 @@ th, td {
     background-color: rgba(3, 110, 30, 0.61);
     color: #ffffff;
     cursor:pointer;
-    transition: 0.25s;
+    transition: 0.24s;
 }
 
 .menu_button:active {
@@ -102,5 +102,5 @@ th, td {
 
 .menu_radio:checked + .menu_button {
     background-color: #000000;
-    color: #fff;
+    color: #ffffff;
 }
