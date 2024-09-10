@@ -102,5 +102,5 @@ th, td {
 
 .menu_radio:checked + .menu_button {
     background-color: #000000;
-    color: #ffffff;
+    color: #fff;
 }
