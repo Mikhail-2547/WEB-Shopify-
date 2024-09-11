@@ -16,9 +16,6 @@ body {
 }
 
 
-
-
-
 .table {
     background-color: white;
     width: 100%;
@@ -103,4 +100,118 @@ th, td {
 .menu_radio:checked + .menu_button {
     background-color: #000000;
     color: #fff;
+}
+
+.container1 {
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+}
+
+.buttons {
+    text-align: right;
+    display: flex;
+}
+
+.link_to_pr {
+    text-align: left;
+    display: flex;
+    flex: 1;
+    font-size: 20px;
+    margin: 0 15px;
+}
+
+.no_link_settings {
+    padding: 0 15px;
+}
+
+.text_input {
+    max-width: 100%;
+    background-color: white;
+    border-radius: 18px;
+    padding: 20px ;
+    margin: 30px;
+}
+
+.text_i {
+    border-collapse: collapse;
+    border: 1px solid #a5a5a5 ;
+    margin: 20px 0;
+    padding: 7px;
+    border-radius: 12px;
+}
+
+.text_i_artice {
+    color: #303030;
+    font-size: 20px;
+    font-family: 'Inter';
+    font-weight: bold;
+}
+
+.text_iii {
+    width: 100%;
+}
+
+.discard, .create_formula, .save {
+    font-size: 18px;
+    font-family: 'Inter';
+    font-weight: bold;
+}
+
+.discard {
+    background-color: white;
+
+    padding: 10px 12px;
+    border: 1px solid rgba(128, 128, 128, 0.698);
+    border-radius: 5px;
+}
+.discard:hover {
+    background-color: #bef2ff;
+    cursor: pointer;
+}
+
+.create_formula {
+    background-color: rgb(27, 27, 27);
+    padding: 10px 17px;
+    border-radius: 15px;
+    color: white;
+    border: 1px solid rgba(201, 201, 201, 0.56);
+}
+.create_formula:hover {
+    cursor: pointer;
+}
+
+.save {
+    color: rgb(156, 156, 156);
+    background-color: rgb(221, 221, 221);
+    padding: 10px 8px;
+    border-radius: 6px;
+    border: 1px solid rgba(201, 201, 201, 0.56);
+
+}
+.save:hover {
+    cursor: pointer;
+}
+.formulas {
+    background-color: white;
+    max-width: 40%;
+    padding: 290px;
+    border-radius: 24px;
+    margin: 0 auto;
+}
+
+.formulas_s {
+    max-width: 100%;
+    background-color: white;
+    border-radius: 24px;
+    padding: 180px;
+    margin: 40px 80px;
+
+}
+
+.cont {
+    max-height:21% ;
+}
+.bottommm{
+    max-height: 79%;
 }
