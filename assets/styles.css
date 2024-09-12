@@ -4,6 +4,15 @@ body {
     font-family: 'Inter';
 }
 
+
+/* 
+-------------------------------------------------------------------
+filter-page
+-------------------------------------------------------------------
+ */
+
+
+
 .settings {
     font-weight:1000;
     font-size: 28px;
@@ -44,9 +53,12 @@ body {
     background-color: rgba(0, 250, 137, 0.349);
 }
 
-td {
-    border-top: 1px solid #b0b0b046;
+.table{
+    td {
+        border-top: 1px solid #b0b0b046;
+    }
 }
+
 
 .delete_icon:hover {
     cursor:pointer;
@@ -102,6 +114,17 @@ th, td {
     color: #fff;
 }
 
+
+
+
+/* 
+-------------------------------------------------------------------
+settings-page
+-------------------------------------------------------------------
+ */
+
+
+
 .container1 {
     display: flex;
     padding: 20px;
@@ -111,13 +134,14 @@ th, td {
 .buttons {
     text-align: right;
     display: flex;
+    gap: 8px;
 }
 
 .link_to_pr {
     text-align: left;
     display: flex;
     flex: 1;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0 15px;
 }
 
@@ -129,14 +153,15 @@ th, td {
     max-width: 100%;
     background-color: white;
     border-radius: 18px;
-    padding: 20px ;
+    padding: 10px ;
     margin: 30px;
+    margin-top: 0;
 }
 
 .text_i {
     border-collapse: collapse;
     border: 1px solid #a5a5a5 ;
-    margin: 20px 0;
+    margin: 10px 0;
     padding: 7px;
     border-radius: 12px;
 }
@@ -145,7 +170,6 @@ th, td {
     color: #303030;
     font-size: 20px;
     font-family: 'Inter';
-    font-weight: bold;
 }
 
 .text_iii {
@@ -160,9 +184,7 @@ th, td {
 
 .discard {
     background-color: white;
-
-    padding: 10px 12px;
-    border: 1px solid rgba(128, 128, 128, 0.698);
+    padding: 5px 12px;
     border-radius: 5px;
 }
 .discard:hover {
@@ -172,10 +194,10 @@ th, td {
 
 .create_formula {
     background-color: rgb(27, 27, 27);
-    padding: 10px 17px;
+    padding: 5px 17px;
     border-radius: 15px;
     color: white;
-    border: 1px solid rgba(201, 201, 201, 0.56);
+
 }
 .create_formula:hover {
     cursor: pointer;
@@ -184,34 +206,72 @@ th, td {
 .save {
     color: rgb(156, 156, 156);
     background-color: rgb(221, 221, 221);
-    padding: 10px 8px;
-    border-radius: 6px;
-    border: 1px solid rgba(201, 201, 201, 0.56);
-
+    padding: 5px 8px;
+    border-radius: 8px;
 }
 .save:hover {
     cursor: pointer;
 }
 .formulas {
     background-color: white;
-    max-width: 40%;
-    padding: 290px;
-    border-radius: 24px;
+    width: 700px;
+    border-radius: 18px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: 340px;
+    justify-content: center;
+    align-items: center;
 }
+
+
+.t_1 , .t_2 , .b_0 {
+    font-family: 'Inter';
+}
+
+.t_1 {
+    font-size: 18px;
+    font-weight: bold ;
+}
+
+.t_2 {
+    font-size: 14px;
+}
+
+.b_0 {
+    background-color:#303030;
+    color: white;
+    font-weight: bold;
+    padding: 6px;
+    width: 32px;
+    border-radius: 5px;
+}
+
+.image_0 {
+    height: 190px;
+}
+
+
+
+
 
 .formulas_s {
     max-width: 100%;
     background-color: white;
     border-radius: 24px;
-    padding: 180px;
-    margin: 40px 80px;
-
+    margin: 17px 30px;
+    height: 162px;
 }
 
-.cont {
-    max-height:21% ;
+.table_formulas{
+    width: 100%;
+    padding: 8px;
+    text-align: left;
 }
-.bottommm{
-    max-height: 79%;
+
+.formulas_article {
+    font-weight: bold;
+    font-size: 24px;
 }
+
