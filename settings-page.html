@@ -5,42 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/reset.css">
     <link rel="stylesheet" href="assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
     <title>Myfilter-page</title>
 </head>
 
 <body>
-    <section class="cont">
-        <section class="container1">
-            <div class="link_to_pr">    
-                <a href="filter-page.html">Home</a> 
-                <div class="no_link_settings">Setting Name</div>
-            </div>
-            <div class="buttons">
-                <div class="discard">Discard</div>
-                <div class="save">Save</div>
-                <div class="create_formula">Create Formula</div>
-            </div>
-        </section>
-    
-        <div class="text_input">
-            <div class="text_i_artice">Title</div>
-            <div class="text_i">
-                <input type="text" placeholder="Setting name" class="text_iii">
-            </div>
+    <section class="container1">
+        <div class="link_to_pr">    
+            <a href="filter-page.html">Home</a> 
+            <div class="no_link_settings">Setting Name</div>
+        </div>
+        <div class="buttons">
+            <div class="discard">Discard</div>
+            <div class="save">Save</div>
+            <div class="create_formula">Create Formula</div>
         </div>
     </section>
 
-    
-    <div class="bottommm">
-        <div class="formulas">
-        </div>
-    
-        <div class="formulas_s">
+    <div class="text_input">
+        <div class="text_i_artice">Title</div>
+        <div class="text_i">
+            <input type="text" placeholder="Setting name" class="text_iii">
         </div>
     </div>
 
+    <div class="bottommm">
+        <div class="formulas">
+            <div class="image"><img class="image_0" src="assets/icons/Illustration.svg" alt="EMPTY"></div>
+            <div class="t_1">Oopsie, seems that you have no formulas yet</div>
+            <div class="t_2">Create your first formula!</div>
+            <button class="b_0">+</button>
+        </div>
+        <div class="formulas_s">
+            <table class="table_formulas">
+                <thead>
+                    <tr>
+                        <th class="formulas_article">Formulas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="content_l">
+                            <a href="#">BTC increase each 2 sec for T-Shirts</a>
+                        </td>
+                        <td class="pen">
+                            <img src="assets/icons/Pen.svg" alt="pen">
+                        </td>
+                        <td class="trash">
+                            <img src="assets/icons/Trash.svg" alt="delete">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="content_l">
+                            <a href="#">BTC increase each 2 sec for T-Shirts</a>
+                        </td>
+                        <td class="pen">
+                            <img src="assets/icons/Pen.svg" alt="pen">
+                        </td>
+                        <td class="trash">
+                            <img src="assets/icons/Trash.svg" alt="delete">
+                        </td>
+                    </tr>
+                </tbody>
 
-
-    
+            </table>
+        </div>
+    </div>
 </body>
 </html>
