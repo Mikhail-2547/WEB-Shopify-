@@ -60,7 +60,7 @@ filter-page
 }
 
 
-.delete_icon:hover {
+.trash, .pen:hover {
     cursor:pointer;
 }
 
@@ -135,6 +135,7 @@ settings-page
     text-align: right;
     display: flex;
     gap: 8px;
+    margin: 0 12px;
 }
 
 .link_to_pr {
@@ -143,12 +144,8 @@ settings-page
     flex: 1;
     font-size: 18px;
     margin: 0 15px;
+    gap: 10px;
 }
-
-.no_link_settings {
-    padding: 0 15px;
-}
-
 .text_input {
     max-width: 100%;
     background-color: white;
@@ -161,15 +158,29 @@ settings-page
 .text_i {
     border-collapse: collapse;
     border: 1px solid #a5a5a5 ;
-    margin: 10px 0;
     padding: 7px;
     border-radius: 12px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .text_i_artice {
     color: #303030;
     font-size: 20px;
     font-family: 'Inter';
+    margin: 0 0 10px 0;
 }
 
 .text_iii {
@@ -231,7 +242,7 @@ settings-page
 }
 
 .t_1 {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold ;
 }
 
@@ -275,3 +286,151 @@ settings-page
     font-size: 24px;
 }
 
+
+
+/*--------------------------------------------------*/
+
+
+.Formula_sq {
+    background-color: white;
+    width: 700px;
+    padding: 28px 20px;
+    border-radius: 12px;
+    margin-left: 30px;
+}
+
+.arcticle_of_sq {
+    margin-bottom: 5px;
+}
+
+
+.t_1_0 {
+    margin-bottom: 11px;
+}
+
+.t_2_0 {
+    margin-top: 4px;
+    margin-bottom: 12px
+}
+
+.search_0 {
+    border: 1px solid #a5a5a5 ;
+    padding: 7px;
+    border-radius: 12px;
+    display: flex;
+    gap: 7px;
+}
+
+.books_container {
+    border: 1px solid #a5a5a5 ;
+    padding: 12px;
+    display: flex;
+    border-radius: 12px;
+    flex-direction: column;
+    margin-top:20px;
+}
+
+
+.book_content{
+    display: flex;
+    gap: 8px;
+    padding: 15px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+
+.book_icon{
+    border-radius: 8px;
+    border: 1px solid #d3d3d3 ;
+
+}
+
+
+.book_content_title{
+    font-size: medium;
+    font-weight: bold;
+    align-self: center;
+}
+
+/* .book_content:last-child {
+    border: none ;
+} */
+
+.books_content .book_content:last-child {
+    border: none;
+}
+
+.book_save_button {
+    display: flex;
+    width: 100%;
+    background-color: #303030;
+    color: white;
+    padding: 6px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+.books_content{
+    overflow: auto;
+    max-height: 250px;
+    margin: 10px 0;
+
+}
+
+.checkboxes_loser_ha {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 12px;
+
+}
+
+.flex_0 {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+
+
+}
+.search_0_1 {
+    margin: 28px 8px;
+    margin-bottom: 0;
+}
+.checkbox_square {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #d3d3d3;
+    .book_content {
+        border-bottom: none;
+    }
+}
+
+
+
+.buttons_lol {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+
+.book_cancel_button {
+    display: flex;
+    width: 100%;
+    background-color: #ffffff;
+    color: black;
+    padding: 6px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid #d7d7d7;
+}
+
+.checkbox_square:last-child {
+    border: none;
+}
+
+.flex_0_1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
