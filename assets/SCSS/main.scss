@@ -1,0 +1,27 @@
+// main.scss
+@import 'variables';
+@import 'mixins';
+@import 'base';
+@import 'layout';
+@import 'components';
+
+@media (max-width: 768px) {
+    /* Стилі для планшетів та мобільних пристроїв */
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    /* Стилі для комп'ютерів */
+    .container {
+        width: 80%;
+    }
+}
