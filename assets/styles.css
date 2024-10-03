@@ -1,3 +1,6 @@
+html{
+    font-size: 18px;
+}
 
 body {
     background: #F1F1F1;
@@ -162,18 +165,6 @@ settings-page
     padding: 7px;
     border-radius: 12px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
