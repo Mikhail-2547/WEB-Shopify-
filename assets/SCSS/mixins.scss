@@ -1,3 +1,17 @@
+// _mixins.scss
+
+// Використання міксинів:
+// Створення міксинів для повторюваних стилів, 
+// таких як бордери або флексові контейнері.
+// Приклад:
+//    @mixin flex-center {
+//      display: flex;
+//      justify-content: center;
+//      align-items: center;
+//    }
+
+
+
 
 @mixin flex-center {
     display: flex;

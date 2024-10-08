@@ -1,20 +1,3 @@
-@media (max-width: 768px) {
-    /* Стилі для планшетів та мобільних пристроїв */
-    .container {
-        width: 90%;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        width: 100%;
-    }
-}
+//_layout.scss
 
 
-@media (min-width: 1024px) {
-    /* Стилі для комп'ютерів */
-    .container {
-        width: 80%;
-    }
-}

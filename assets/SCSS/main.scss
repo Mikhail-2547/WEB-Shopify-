@@ -1,7 +1,15 @@
+// |_ _variables.scss    --> Змінні
+// |_ _mixins.scss       --> Міксини
+// |_ _base.scss         --> Базові стилі (сбраси, основні стилі)
+// |_ _layout.scss       --> Стилі макета (сітки, контейнер)
+// |_ _components.scss   --> Стилі для компонентів (меню, картки)
+// |_ main.scss          --> Головний файл, який імплементує всі інші
+
+
+
 // main.scss
 @import 'variables';
 @import 'mixins';
 @import 'base';
 @import 'layout';
 @import 'components';
-
