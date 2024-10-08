@@ -49,6 +49,7 @@ filter-page
     font-weight: $font_wght;
     margin-top: 2rem;
     font-size: 2rem;
+    margin: 1rem;
 }
 
 .container {
@@ -56,9 +57,8 @@ filter-page
 }
 
 .table {
-    @include containers {
-        padding: 0 0.2rem;
-    }
+    @include containers;
+    padding: 0 0.2rem;
     width: 100%;
     text-align: left;
     margin: 1rem 0;
@@ -85,7 +85,7 @@ th, td {
     width: 100%;
     display: flex;
     margin: 1rem 0;
-    border-radius: $bd_radius_2;
+    border-radius: $bd_radius_1;
     box-shadow: $bx_shadow;
 }
 .menu_button {
@@ -94,7 +94,7 @@ th, td {
 
 .menu_button:hover {
     @include pointer;
-    background-color: $bg_menu_button;
+    background-color: $bg_menu_button_hover;
     color: $bg_color_white;
     transition: $hover_transition;
 }
@@ -113,6 +113,11 @@ th, td {
     color: $color_radio_checked;
 }
 
+.menu_radio:first-child + .menu_button {
+    border-radius: $bd_radius_1;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
 
 /* 
 -------------------------------------------------------------------
