@@ -1,0 +1,89 @@
+//_components.scss
+// Організація стилів:
+
+// Розподіл стилів по компонентах у файлі.
+// Приклад:
+//    // _components.scss
+//    .button {
+//      @include flex-center;
+//      background-color: $primary-color;
+//      color: white_;
+//      padding: 10px 20px;
+//      border-radius: 5px;
+//    }
+
+body {
+    background: #F1F1F1;
+    font-family: $font_stack;
+    margin: 1rem;
+}
+
+h1 {
+    color: $h1_color;
+    font-size: 2rem;
+}
+
+.status {
+    padding: 0.5rem;
+}
+.status div {
+    display: inline;
+    background-color: $bg_color--border;
+    padding: 0.2rem 0.5rem;
+    border-radius: $bd_radius;
+    margin-left: 0.5rem;
+}
+
+.st_active div {
+    background-color: $bd_active_color;
+}
+
+
+.settings {
+    font-weight: $font_wght;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.container {
+    margin: 1rem;
+}
+
+.table {
+    background-color: $bg_color_1;
+    width: 100%;
+    border-radius: $bd_radius;
+    text-align: left;
+    margin: 1rem 0;
+    padding: 0 0.2rem;
+    box-shadow: $bx_shadow;
+    border-color: $bd_color;
+}
+
+
+.table {
+    td {
+        border-top: $bd_color;
+    }
+}
+
+.trash, .pen:hover {
+    cursor:pointer;
+}
+
+th, td {
+    padding: 0.9rem;
+}
+
+.menu {
+    background-color: $bg_color_1;
+    width: 100%;
+    display: flex;
+    margin: 1rem 0;
+    border-radius: $bd_radius_2;
+    box-shadow: $bx_shadow;
+}
+.menu_button {
+    padding: 0.8rem 1.6rem;
+    
+}

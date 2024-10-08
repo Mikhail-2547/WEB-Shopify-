@@ -1,0 +1,38 @@
+// _mixins.scss
+
+// Використання міксинів:
+// Створення міксинів для повторюваних стилів, 
+// таких як бордери або флексові контейнері.
+// Приклад:
+//    @mixin flex-center {
+//      display: flex;
+//      justify-content: center;
+//      align-items: center;
+//    }
+
+
+
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin border_bottom{
+    border-bottom: 1px solid #d7d7d7;
+}
+
+@mixin containers{
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: -2px 2px 5px rgb(204, 204, 204);
+    border-collapse: collapse;
+    padding: 2rem;
+}
+
+@mixin button{
+    font-weight: bold;
+}
+

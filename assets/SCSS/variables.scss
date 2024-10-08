@@ -1,0 +1,22 @@
+//_variables.scss
+
+// Використання змінних:
+
+// Визначення змінних для кольорів, розмірів шрифтів, 
+// відступів та інших властивостей у файлі _variables.scss.
+// Приклад:
+//    $primary-color: #3498db_;
+//    $font-stack: 'Helvetica, Arial, sans-serif';
+//    $container-width: 1200px;
+
+
+$bx_shadow: -2px 2px 5px rgb(204, 204, 204);
+$bd_color: 1px solid #b0b0b047;
+$font_stack: 'Inter';
+$h1_color: #303030;
+$font_wght: bold;
+$bg_color--border:rgba(196, 196, 196, 0.3);
+$bd_radius: 0.9rem;
+$bd_radius_2: 0.4rem;
+$bg_color_1: white;
+$bd_active_color: rgba(0, 250, 137, 0.349);
