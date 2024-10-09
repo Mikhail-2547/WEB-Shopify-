@@ -218,13 +218,14 @@ settings-page
 
 .b_0 {
     @include box_shadow;
+    @include flex-center;
     background-color: $bg_button_black;
     color: $button_color_0;
     font-weight: $font_wght;
     padding: 0.4rem;
     width: 2.2rem;
     border-radius: $bd_radius_small;
-    
+
 }
 
 .image_0 {
