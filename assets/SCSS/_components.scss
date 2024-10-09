@@ -91,6 +91,8 @@ th, td {
 
 .menu_button:active {
     background-color: $bg_menu_button_active;
+    color: $bg_color_white;
+
     transition: 0;
 }
 
@@ -165,6 +167,7 @@ settings-page
 
 .discard, .create_formula, .save {
     @include box_shadow;
+    @include flex-center;
     font-size: 1.4rem;
     font-weight: $font_wght;
 }
@@ -207,6 +210,7 @@ settings-page
 }
 
 .t_1 {
+    margin: 0 0.5rem;
     font-size: 1.1rem;
     font-weight: $font_wght;
     text-align: center;
