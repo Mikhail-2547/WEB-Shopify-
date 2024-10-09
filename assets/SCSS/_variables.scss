@@ -10,14 +10,15 @@
 //    $container-width: 1200px;
 
 
-$bx_shadow: -2px 2px 5px rgb(204, 204, 204);
-$bd_color: 1px solid #b0b0b047;
+$bx_shadow: -1px 1px 5px rgb(204, 204, 204);
+$bd_color: 1px solid #c4c4c454;
 $font_stack: 'Inter';
 $h1_color: #303030;
 $font_wght: bold;
 $bg_color--border:rgba(196, 196, 196, 0.3);
-$bd_radius: 0.8rem;
-$bd_radius_2: 0.4rem;
+
+$bd_radius: 1.2rem;
+$bd_radius_1: 0.8rem;
 $bg_color_white: white;
 $bd_active_color: rgba(0, 250, 137, 0.349);
 $bg_menu_button_hover: rgba(3, 110, 30, 0.61);
@@ -25,3 +26,12 @@ $bg_menu_button_active: rgba(7, 94, 66, 0.393);
 $hover_transition: 0.25s;
 $bg_radio_checked: black;
 $color_radio_checked: white;
+
+$bg_button_white: rgb(221, 221, 221);
+$button_white_color: rgb(156, 156, 156);
+$discard_hover: #bef2ff;
+$bg_button_black: rgb(25, 25, 25);
+
+$button_color_0: white;
+$padding_button_up_down: 0.2rem;
+$bd_radius_small: 0.5rem;

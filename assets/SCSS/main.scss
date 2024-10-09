@@ -8,10 +8,8 @@
 
 
 // main.scss
-@import 'variables';
-@import 'mixins';
-@import 'base';
-@import 'layout';
-@import 'components';
-
-
+@import '_variables';
+@import '_mixins';
+@import '_base';
+@import '_layout';
+@import '_components';
