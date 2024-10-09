@@ -23,16 +23,15 @@
     cursor: pointer;
 }
 
-@mixin border_bottom{
-    border-bottom: 1px solid #d7d7d7;
+@mixin box_shadow {
+    box-shadow: $bx_shadow_1;
+
 }
 
 @mixin containers{
     background-color: $bg_color_white;
     border-radius: $bd_radius;
     box-shadow: $bx_shadow;
-    border-collapse: collapse;
-    padding: 2rem;
 }
 
 @mixin button{
