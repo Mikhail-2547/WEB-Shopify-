@@ -218,6 +218,7 @@ settings-page
 
 .b_0 {
     @include box_shadow;
+    @include flex-center;
     background-color: $bg_button_black;
     color: $button_color_0;
     font-weight: $font_wght;
