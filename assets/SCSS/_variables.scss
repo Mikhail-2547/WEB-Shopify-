@@ -11,14 +11,21 @@
 
 
 $bx_shadow: -1px 1px 5px rgb(204, 204, 204);
+$bx_shadow_1: -1px 1px 5px rgba(229, 229, 229, 0.649);
 $bd_color: 1px solid #c4c4c454;
+$bd_color_1: 1px solid #d3d3d3;
 $font_stack: 'Inter';
 $h1_color: #303030;
 $font_wght: bold;
-$bg_color--border:rgba(196, 196, 196, 0.3);
+$bg_color_border:rgba(196, 196, 196, 0.3);
+
+$color_black: black;
 
 $bd_radius: 1.2rem;
 $bd_radius_1: 0.8rem;
+$bd_radius_small: 0.5rem;
+
+
 $bg_color_white: white;
 $bd_active_color: rgba(0, 250, 137, 0.349);
 $bg_menu_button_hover: rgba(3, 110, 30, 0.61);
@@ -34,4 +41,5 @@ $bg_button_black: rgb(25, 25, 25);
 
 $button_color_0: white;
 $padding_button_up_down: 0.2rem;
-$bd_radius_small: 0.5rem;
+
+$bd_search_cont_color: 1px solid #a5a5a5;

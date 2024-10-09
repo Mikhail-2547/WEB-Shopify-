@@ -140,8 +140,6 @@ filter-page
   background-color: white;
   border-radius: 1.2rem;
   box-shadow: -1px 1px 5px rgb(204, 204, 204);
-  border-collapse: collapse;
-  padding: 2rem;
   padding: 0 0.2rem;
   width: 100%;
   text-align: left;
@@ -217,7 +215,7 @@ settings-page
   text-align: left;
   display: flex;
   flex: 1;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   margin: 0 1rem;
   gap: 0.8rem;
 }
@@ -226,8 +224,6 @@ settings-page
   background-color: white;
   border-radius: 1.2rem;
   box-shadow: -1px 1px 5px rgb(204, 204, 204);
-  border-collapse: collapse;
-  padding: 2rem;
   max-width: 100%;
   padding: 0.8rem;
   margin: 2rem;
@@ -252,6 +248,7 @@ settings-page
 }
 
 .discard, .create_formula, .save {
+  box-shadow: -1px 1px 5px rgba(229, 229, 229, 0.649);
   font-size: 1.4rem;
   font-weight: bold;
 }
@@ -260,6 +257,10 @@ settings-page
   background-color: white;
   padding: 0.2rem 0.8rem;
   border-radius: 0.8rem;
+}
+
+.discard:hover {
+  background-color: #bef2ff;
 }
 
 .create_formula {
@@ -280,8 +281,6 @@ settings-page
   background-color: white;
   border-radius: 1.2rem;
   box-shadow: -1px 1px 5px rgb(204, 204, 204);
-  border-collapse: collapse;
-  padding: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -295,12 +294,13 @@ settings-page
 }
 
 .t_1 {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: bold;
   text-align: center;
 }
 
 .b_0 {
+  box-shadow: -1px 1px 5px rgba(229, 229, 229, 0.649);
   background-color: rgb(25, 25, 25);
   color: white;
   font-weight: bold;
@@ -318,8 +318,6 @@ settings-page
   background-color: white;
   border-radius: 1.2rem;
   box-shadow: -1px 1px 5px rgb(204, 204, 204);
-  border-collapse: collapse;
-  padding: 2rem;
   padding: 1rem;
   max-width: 100%;
   background-color: white;
@@ -331,7 +329,7 @@ settings-page
   width: 100%;
   padding: 0.5rem;
   text-align: left;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .formulas_article {
@@ -344,3 +342,173 @@ settings-page
 formulas-page
 -------------------------------------------------------------------
 */
+.flex_0 {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.2rem;
+  margin: 2rem;
+}
+
+.Formula_sq {
+  background-color: white;
+  border-radius: 1.2rem;
+  box-shadow: -1px 1px 5px rgb(204, 204, 204);
+  padding: 2rem 1.2rem;
+  width: 100%;
+}
+
+.Containers_with_books_1 {
+  display: flex;
+  flex: 1.4;
+}
+
+.Containers_with_books_2 {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+
+.article_of_sq {
+  margin-bottom: 0.2rem;
+}
+
+.t_1_0 {
+  margin-bottom: 0.8rem;
+}
+
+.t_2_0 {
+  margin-top: 0.2rem;
+  margin-bottom: 0.85rem;
+}
+
+.search_0 {
+  border: 1px solid #a5a5a5;
+  padding: 0.5rem;
+  border-radius: 0.8rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.book_container {
+  border: 1px solid #a5a5a5;
+  padding: 0.9rem;
+  display: flex;
+  border-radius: 1.2rem;
+  flex-direction: column;
+  margin-top: 1.6rem;
+}
+
+.book_content {
+  display: flex;
+  gap: 0.8rem;
+  padding: 1.1rem;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.book_icon {
+  border-radius: 0.8rem;
+  border: 1px solid #d3d3d3;
+}
+
+.book_content_title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  align-self: center;
+}
+
+.books_content .book_content:last-child {
+  border: none;
+}
+
+.book_save_button {
+  box-shadow: -1px 1px 5px rgba(229, 229, 229, 0.649);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: rgb(25, 25, 25);
+  color: white;
+  border-radius: 0.8rem;
+}
+
+.books_content {
+  overflow: auto;
+  max-height: 19rem;
+  margin: 0.2rem 0;
+}
+
+.checkboxes_list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.9rem;
+}
+
+.search_0_1 {
+  margin: 2rem 0.8rem;
+  margin-bottom: 0;
+}
+
+.checkbox_square {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #d3d3d3;
+}
+.checkbox_square .book_content {
+  border-bottom: none;
+}
+
+.buttons_list {
+  width: 100%;
+  display: flex;
+  gap: 0.2rem;
+}
+
+.book_cancel_button {
+  box-shadow: -1px 1px 5px rgba(229, 229, 229, 0.649);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding: 0.3rem;
+  border-radius: 0.8rem;
+  border: 1px solid #d3d3d3;
+}
+
+.checkbox_square:last-child {
+  border: none;
+}
+
+.checkbox_some {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.checkbox_some .checkbox_square {
+  padding-left: 2.4rem;
+  border: none;
+}
+
+.checkbox_some .checkbox_square:first-child {
+  padding-left: 0;
+}
+
+.checkbox_some:last-child {
+  border: none;
+}
+
+.checkbox_some .checkbox_square .book_content {
+  padding: 0.8rem;
+}
+
+.div_with_selected_checkbox {
+  display: flex;
+  gap: 0.8rem;
+  visibility: hidden;
+}
