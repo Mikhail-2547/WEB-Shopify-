@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0px;
   margin: 0px;
@@ -38,7 +39,6 @@ img {
 }
 
 img, svg {
-  max-width: 100%;
   height: auto;
 }
 
@@ -89,6 +89,98 @@ button {
   border: none;
 }
 
+/* Медиа-запросы для экранов до 768px */
+/* Медиа-запросы для экранов до 480px */
+@media (max-width: 480px) {
+  .formulas_s {
+    margin: 1.4rem 0.8rem !important;
+    border-radius: 0.5rem !important;
+  }
+  .formulas {
+    min-width: 22rem !important;
+    border-radius: 0.5rem !important;
+  }
+  .text_input {
+    margin: 1rem !important;
+    border-radius: 0.5rem !important;
+  }
+  .menu {
+    flex-direction: column;
+    width: 100%;
+  }
+  .link_to_pr {
+    justify-content: center;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    background-color: white;
+    align-items: center;
+    flex-direction: column;
+  }
+  .link_to_pr a {
+    align-items: center;
+    text-align: center;
+  }
+  .link_to_pr div {
+    text-align: center;
+    background-color: rgba(0, 250, 137, 0.349);
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .menu_button:last-child {
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+  }
+  .menu_radio:first-child + .menu_button {
+    border-top-right-radius: 0.8rem !important;
+    border-bottom-left-radius: 0 !important;
+  }
+  .menu_button {
+    padding: 0.5rem 0.8rem;
+    width: 100%;
+    text-align: center;
+  }
+  .container1 {
+    margin: 0 !important;
+    padding: 1rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column !important;
+    gap: 1rem;
+  }
+  .container1 .buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  .container1 .buttons button {
+    border-radius: 0 !important;
+    width: 100%;
+    padding: 0.4rem;
+  }
+  .container1 .buttons button:last-child {
+    border-bottom-left-radius: 2rem !important;
+    border-bottom-right-radius: 2rem !important;
+  }
+  .flex_0 {
+    flex-direction: column !important;
+    margin: 1rem !important;
+    gap: 0 !important;
+  }
+  .flex_0 .Formula_sq {
+    margin: 0.5rem 0;
+    border-radius: 0.5rem !important;
+  }
+  .flex_0 .Containers_with_books_2 {
+    width: 100%;
+    gap: 0;
+  }
+  .buttons_list {
+    flex-direction: column;
+  }
+  .buttons_list button {
+    border-radius: 0.5rem !important;
+  }
+}
 body {
   background: #F1F1F1;
   font-family: "Inter";
