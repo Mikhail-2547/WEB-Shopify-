@@ -2,26 +2,7 @@
 
 /* Медиа-запросы для экранов до 768px */
 // @media (max-width: 768px) {
-//     body {
-//         margin: 0.5rem;
-//     }
 
-//     h1 {
-//         font-size: 1.8rem;
-//     }
-
-//     .container {
-//         margin: 0.5rem;
-//     }
-
-//     .menu_button {
-//         padding: 0.6rem 1rem;
-//     }
-
-//     .table {
-//         font-size: 0.9rem;
-//     }
-    
 // }
 
 /* Медиа-запросы для экранов до 480px */
@@ -107,8 +88,7 @@
                 width: 100%;
                 padding: 0.4rem;
             }
-            button:first-child{
-            }
+
             button:last-child{
                 border-bottom-left-radius: 2rem !important;
                 border-bottom-right-radius: 2rem !important;
