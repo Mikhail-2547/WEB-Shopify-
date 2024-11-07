@@ -37,8 +37,8 @@ filter-page
     margin-left: 0.5rem;
 }
 
-.st_active div {
-    background-color: $bd_active_color;
+.st_active{
+    background-color: $bd_active_color!important;
 }
 
 
@@ -196,7 +196,7 @@ settings-page
     border-radius: $bd_radius_1;
 }
 
-.formulas {
+.empty-state {
     @include containers;
     @include flex-center;
     margin: 0 auto;
@@ -218,6 +218,7 @@ settings-page
 
 .b_0 {
     @include box_shadow;
+    @include flex-center;
     background-color: $bg_button_black;
     color: $button_color_0;
     font-weight: $font_wght;
@@ -425,4 +426,42 @@ formulas-page
     display: flex;
     gap: 0.8rem;
     visibility: hidden;
+}
+
+
+
+
+//-------------------------------
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-primary {
+    padding: 0.6rem;
+    background-color: $bg_button_black;
+    color: $button_color_0;
+    margin-right: 1rem;
+    border-radius: 0.3rem;
+}
+
+.shablon {
+    display:none;
+}
+
+.setting_em {
+    min-height: 26rem;
+    min-width: 18rem;
+
+    max-width: 50vw;
+    height: 64vh;
+}
+
+.hidden {
+    display:none;
+}
+.b_0 {
+    
 }

@@ -13,8 +13,15 @@
 
 <body>
 
-    <h1 class="settings">Settings</h1>
     <section class="container">
+        <div class="nav">
+            <h1 class="settings">Settings</h1>
+            <div class="header-controls">
+                <a href="setting.html" class="btn-primary btn" aria-controls="create-setting">
+                    Create setting
+                </a>
+            </div>
+        </div>
         <div class="menu">
             <input type="radio" id="btn_all" name="menu" class="menu_radio" checked>
             <label for="btn_all" class="menu_button">All settings</label>
@@ -31,8 +38,15 @@
             <input type="radio" id="btn_ton" name="menu" class="menu_radio">
             <label for="btn_ton" class="menu_button">TON</label>
         </div>
-        
-        <table class="table">
+
+        <div class="empty-state setting_em">
+            <div class="image"><img class="image_0" src="assets/icons/Illustration.svg" alt="EMPTY"></div>
+            <div class="t_1">Oopsie, seems that you have no settings yet</div>
+            <div class="t_2">Create your first setting!</div>
+            <a href="setting.html" class="b_0 btn-primary" aria-controls="create-setting">+</a>
+        </div>
+        <!-- shablon -->
+        <table class="table settings-table">
             <thead>
                 <tr>
                 <div class="s_n">
@@ -41,42 +55,185 @@
                 </div>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
+            <tbody class="settings-list">
+                <tr class="setting-line hidden" id="setting-line-template">
                     <td class="content">
-                        <a class="content_link" href="settings-page.html">Content</a>
+                        <a class="content_link setting-link" href="setting.html">
+                            2 sec for T-Shirts
+                        </a>
                     </td>
                     <td class="status">
-                        <div>Draft</div>
+                        <div class="st_active status-badge setting-status-badge ">active</div>
                     </td>
                     <td>
-                        <img class="trash" src="assets/icons/Trash.svg" alt="Delete">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="content">
-                        <a class="content_link" href="#">Content</a>
-                    </td>
-                    <td class="status st_active">
-                        <div>Active</div>
-                    </td>
-                    <td>
-                        <img class="trash" src="assets/icons/Trash.svg" alt="Delete">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="content">
-                        <a class="content_link" href="#">Content</a>
-                    </td>
-                    <td class="status st_active">
-                        <div>Active</div>
-                    </td>
-                    <td>
-                        <img class="trash" src="assets/icons/Trash.svg" alt="Delete">
+                        <img class="trash" src="assets/icons/Trash.svg" alt="Delete" aria-controls="create-remove">
                     </td>
                 </tr>
             </tbody>
         </table>
     </section>
+    <script type="application/json" id="state">
+        {
+            "currencies": [
+                {
+                    "id": 1,
+                    "title": "BTC",
+                    "value": 0.0001
+                },
+                {
+                    "id": 2,
+                    "title": "USDT",
+                    "value": 1
+                }
+            ],
+            "settings": [
+                {
+                    "id": 1,
+                    "title": "BTC & USDT increase each 2 sec for T-Shirts",
+                    "status": "active",
+                    "formulas": [
+                        {
+                            "id": 1,
+                            "title": "BTC in used for T-Shirts",
+                            "formula": "X * Y",
+                            "frequency": 2000,
+                            "currency": "BTC",
+                            "targets": {
+                                "collectionsIds": [
+                                    1,
+                                    2
+                                ],
+                                "products": [
+                                    {
+                                        "id": 1,
+                                        "variantsIds": [
+                                            1,
+                                            2
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 1,
+                            "title": "USDT in used for hoodies",
+                            "formula": "X + Y",
+                            "frequency": 2000,
+                            "currency": "USDT",
+                            "targets": {
+                                "collectionsIds": [
+                                    3,
+                                    4
+                                ],
+                                "products": [
+                                    {
+                                        "id": 3,
+                                        "variants": [
+                                            1,
+                                            2,
+                                            3
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "collections": [
+                {
+                    "id": 1,
+                    "title": "T-Shirts"
+                },
+                {
+                    "id": 2,
+                    "title": "Hoodies"
+                },
+                {
+                    "id": 3,
+                    "title": "Socks"
+                },
+                {
+                    "id": 4,
+                    "title": "Caps"
+                }
+            ],
+            "products": [
+                {
+                    "id": 1,
+                    "title": "Product 1",
+                    "price": 11,
+                    "variants": [
+                        {
+                            "id": 1,
+                            "title": "Black",
+                            "price": 11
+                        },
+                        {
+                            "id": 2,
+                            "title": "Red",
+                            "price": 12
+                        },
+                        {
+                            "id": 3,
+                            "title": "White",
+                            "price": 13
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "title": "Product 2",
+                    "price": 15,
+                    "variants": []
+                },
+                {
+                    "id": 3,
+                    "title": "Product 3",
+                    "price": 20.99,
+                    "variants": [
+                        {
+                            "id": 1,
+                            "title": "Black",
+                            "price": 29.99
+                        },
+                        {
+                            "id": 2,
+                            "title": "Red",
+                            "price": 20.99
+                        },
+                        {
+                            "id": 3,
+                            "title": "White",
+                            "price": 29.99
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "title": "Product 4",
+                    "price": 50,
+                    "variants": [
+                        {
+                            "id": 1,
+                            "title": "XXL",
+                            "price": 55.99
+                        },
+                        {
+                            "id": 2,
+                            "title": "XL",
+                            "price": 51.99
+                        },
+                        {
+                            "id": 3,
+                            "title": "L",
+                            "price": 50
+                        }
+                    ]
+                }
+            ]
+        }        
+    </script>
+    <script src="./assets/src/scripts/settings-page.js"></script>
 </body>
 </html>
