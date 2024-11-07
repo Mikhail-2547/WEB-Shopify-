@@ -127,11 +127,11 @@ button {
     padding: 0.5rem;
   }
   .menu_button:last-child {
-    border-bottom-left-radius: 0.8rem;
-    border-bottom-right-radius: 0.8rem;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
   }
   .menu_radio:first-child + .menu_button {
-    border-top-right-radius: 0.8rem !important;
+    border-top-right-radius: 0.3rem !important;
     border-bottom-left-radius: 0 !important;
   }
   .menu_button {
@@ -209,12 +209,12 @@ filter-page
   display: inline;
   background-color: rgba(196, 196, 196, 0.3);
   padding: 0.2rem 0.5rem;
-  border-radius: 1.2rem;
+  border-radius: 0.5rem;
   margin-left: 0.5rem;
 }
 
-.st_active div {
-  background-color: rgba(0, 250, 137, 0.349);
+.st_active {
+  background-color: rgba(0, 250, 137, 0.349) !important;
 }
 
 .settings {
@@ -230,7 +230,7 @@ filter-page
 
 .table {
   background-color: white;
-  border-radius: 1.2rem;
+  border-radius: 0.5rem;
   box-shadow: -1px 1px 5px rgb(204, 204, 204);
   padding: 0 0.2rem;
   width: 100%;
@@ -251,7 +251,7 @@ th, td {
   width: 100%;
   display: flex;
   margin: 1rem 0;
-  border-radius: 0.8rem;
+  border-radius: 0.3rem;
   box-shadow: -1px 1px 5px rgb(204, 204, 204);
 }
 
@@ -281,7 +281,7 @@ th, td {
 }
 
 .menu_radio:first-child + .menu_button {
-  border-radius: 0.8rem;
+  border-radius: 0.3rem;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
@@ -315,7 +315,7 @@ settings-page
 
 .text_input {
   background-color: white;
-  border-radius: 1.2rem;
+  border-radius: 0.5rem;
   box-shadow: -1px 1px 5px rgb(204, 204, 204);
   max-width: 100%;
   padding: 0.8rem;
@@ -327,7 +327,7 @@ settings-page
   border-collapse: collapse;
   border: 1px solid rgba(196, 196, 196, 0.3294117647);
   padding: 0.6rem;
-  border-radius: 0.8rem;
+  border-radius: 0.3rem;
 }
 
 .text_i_article {
@@ -352,7 +352,7 @@ settings-page
 .discard {
   background-color: white;
   padding: 0.2rem 0.8rem;
-  border-radius: 0.8rem;
+  border-radius: 0.3rem;
 }
 
 .discard:hover {
@@ -362,7 +362,7 @@ settings-page
 .create_formula {
   background-color: rgb(25, 25, 25);
   padding: 0.2rem 1.2rem;
-  border-radius: 0.8rem;
+  border-radius: 0.3rem;
   color: white;
 }
 
@@ -370,12 +370,12 @@ settings-page
   background-color: rgb(221, 221, 221);
   color: rgb(156, 156, 156);
   padding: 0.2rem 0.8rem;
-  border-radius: 0.8rem;
+  border-radius: 0.3rem;
 }
 
-.formulas {
+.empty-state {
   background-color: white;
-  border-radius: 1.2rem;
+  border-radius: 0.5rem;
   box-shadow: -1px 1px 5px rgb(204, 204, 204);
   display: flex;
   justify-content: center;
@@ -398,6 +398,9 @@ settings-page
 
 .b_0 {
   box-shadow: -1px 1px 5px rgba(229, 229, 229, 0.649);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(25, 25, 25);
   color: white;
   font-weight: bold;
@@ -413,7 +416,7 @@ settings-page
 
 .formulas_s {
   background-color: white;
-  border-radius: 1.2rem;
+  border-radius: 0.5rem;
   box-shadow: -1px 1px 5px rgb(204, 204, 204);
   padding: 1rem;
   max-width: 100%;
@@ -448,7 +451,7 @@ formulas-page
 
 .Formula_sq {
   background-color: white;
-  border-radius: 1.2rem;
+  border-radius: 0.5rem;
   box-shadow: -1px 1px 5px rgb(204, 204, 204);
   padding: 2rem 1.2rem;
   width: 100%;
@@ -482,7 +485,7 @@ formulas-page
 .search_0 {
   border: 1px solid #a5a5a5;
   padding: 0.5rem;
-  border-radius: 0.8rem;
+  border-radius: 0.3rem;
   display: flex;
   gap: 0.5rem;
 }
@@ -491,7 +494,7 @@ formulas-page
   border: 1px solid #a5a5a5;
   padding: 0.9rem;
   display: flex;
-  border-radius: 1.2rem;
+  border-radius: 0.5rem;
   flex-direction: column;
   margin-top: 1.6rem;
 }
@@ -504,7 +507,7 @@ formulas-page
 }
 
 .book_icon {
-  border-radius: 0.8rem;
+  border-radius: 0.3rem;
   border: 1px solid #d3d3d3;
 }
 
@@ -527,7 +530,7 @@ formulas-page
   padding: 0.5rem;
   background-color: rgb(25, 25, 25);
   color: white;
-  border-radius: 0.8rem;
+  border-radius: 0.3rem;
 }
 
 .books_content {
@@ -572,7 +575,7 @@ formulas-page
   background-color: white;
   color: black;
   padding: 0.3rem;
-  border-radius: 0.8rem;
+  border-radius: 0.3rem;
   border: 1px solid #d3d3d3;
 }
 
@@ -608,4 +611,33 @@ formulas-page
   display: flex;
   gap: 0.8rem;
   visibility: hidden;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-primary {
+  padding: 0.6rem;
+  background-color: rgb(25, 25, 25);
+  color: white;
+  margin-right: 1rem;
+  border-radius: 0.3rem;
+}
+
+.shablon {
+  display: none;
+}
+
+.setting_em {
+  min-height: 26rem;
+  min-width: 18rem;
+  max-width: 50vw;
+  height: 64vh;
+}
+
+.hidden {
+  display: none;
 }
