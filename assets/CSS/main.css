@@ -367,8 +367,8 @@ settings-page
 }
 
 .save {
-  background-color: rgb(221, 221, 221);
-  color: rgb(156, 156, 156);
+  background-color: rgb(25, 25, 25);
+  color: white;
   padding: 0.2rem 0.8rem;
   border-radius: 0.3rem;
 }
