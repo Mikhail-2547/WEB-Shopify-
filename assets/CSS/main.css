@@ -260,7 +260,7 @@ th, td {
 }
 
 .menu_button:hover {
-  background-color: rgba(3, 110, 30, 0.61);
+  background-color: rgb(255, 0, 0);
   color: white;
   transition: 0.25s;
 }
@@ -623,7 +623,6 @@ formulas-page
   padding: 0.6rem;
   background-color: rgb(25, 25, 25);
   color: white;
-  margin-right: 1rem;
   border-radius: 0.3rem;
 }
 
