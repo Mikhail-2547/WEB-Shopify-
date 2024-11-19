@@ -7,7 +7,7 @@ const initialState = document.querySelector(selectors.stateJson).textContent;
 
 const state = JSON.parse(initialState);
 const params = new URLSearchParams(state);
-
+console.log(params);
 const url = window.location.href;
 
 
@@ -28,16 +28,20 @@ const url = window.location.href;
     
 //     return params;
 //   }
-function getUrlParams(url) {
+function getUrlParams(url, state) {
     const urlInit = new URL(url);
     const params = new URLSearchParams(urlInit.search);
-    params.append('id','6');
-
+    params.append(state.querySelector("id"),'6');
+    urlInit.search = (params);
+    return urlInit;
 }
 
 
-getUrlParams(url);
 
+
+document.querySelector(".pen").addEventListener("click", () => {
+    console.log(getUrlParams(url, params[1]).href);
+})
 
 
 // function URL_ident(url) {
