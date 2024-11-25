@@ -1,36 +1,43 @@
 const selectors = {
     stateJson: '#state',
     emptyState: '.empty-state',
-    deleteFormula: '[aria-controls="delete-formula"]',
-    createFormula: '[aria-controls="create-formula"]',
+    deleteFormula: 'trash',
+    createFormula: 'create_formula',
+    pen: 'pen',
     textInputforCreatingFormula: '.text_input_lol',
     discard: '.discard',
     save: '.save',
-    create: '.create',
     formulasFolder: '#formulasFolder',
-    template: '.formula-template'
+    template: '.formula-template',
+    formulaTemplate2: 'formula-template',
+    createFormulaFromEmptyState: 'b_0',
+    link: 'linkToFormulasPage',
+    table: '.formulas_s',
+    home: '#home'
 }
 
 
 //  CURRENT LIST OF FORMULAS
-const currentSettings  = document.querySelectorAll(selectors.template);
-// sessionStorage.setItem("myData", JSON.stringify(formulaTemplate));
+const currentSettings  = document.querySelector(selectors.formulasFolder);
+//  SAVED LIST OF FORMULAS
+const savedSettings = currentSettings.cloneNode(currentSettings);
 
+const empty = document.querySelector(selectors.emptyState);
+const table = document.querySelector(selectors.table)
 
-
+// CURRENT URL
+const url = new URL(window.location);
 
 
 // INITIALIZING THE EMTY STATE
-const empty = document.querySelector('.empty-state');
-const table = document.querySelector('.formulas_s')
-if (currentSettings.length == 0){
-    table.classList.add('hidden');
-}
+
+
+
 
 //  ADDING EMPTY STATE HIDDEN IF LIST OF FORMULAS IS NOT EMPTY
 
 function emptyStateFunction( x ){
-    if (x.length == 0) {
+    if (x.childElementCount == 1) {
         empty.classList.remove('hidden');
         table.classList.add('hidden');
     }
@@ -43,67 +50,98 @@ emptyStateFunction(currentSettings);
 
 
 
-// CURRENT URL
-const url = new URL(window.location)
-
 
 // JSON FROM HTML FILE
 const initialState = document.querySelector(selectors.stateJson).textContent;
 const state = JSON.parse(initialState);
 
-// NO NEED FOR NOW
-const params = new URLSearchParams(state[1]);
-
-
-// TESTING
-console.log(url.search);
-console.log(url);
-console.log(currentSettings)
-
-// GOING TO ANOTHER LINK
-const ev = document.querySelector(".b_0");
-const es = document.querySelector(".linkToFormulasPage");
-
-(ev, es).addEventListener('click', () => {
-    window.location.href = 'http://127.0.0.1:5500/WEB-Shopify--MIT-21-Mikhail-Melik-Kazarian/setting.html?id=1&id=4';
-})
 
 document.addEventListener('click', (event) => {
-    if (event.target.classList.contains('trash')) {
+    if (event.target.classList.contains(selectors.deleteFormula)) {
         const parent = event.target.parentElement.parentElement;
         parent.remove();
-        emptyStateFunction(document.querySelectorAll(".formula-template"));
+        emptyStateFunction(currentSettings);
     }
 });
 
 
-document.querySelector(selectors.discard).addEventListener('click', () => {
-    const textInput = document.querySelector(selectors.textInputforCreatingFormula).value;
-    console.log(textInput);
-})
 
-const saveButton = document.querySelector(selectors.save);
+document.addEventListener('click', (event) => {
+    if (event.target.classList.contains(selectors.pen)) {
+        if (document.querySelector(selectors.textInputforCreatingFormula).value == "") {
+            console.log("Write something ...");
+            alert("Write something ...");
+        }
+        else{
+            const sibling = event.target.parentElement.parentElement.firstElementChild;
+            console.log(sibling);
+            sibling.innerHTML = document.querySelector(selectors.textInputforCreatingFormula).value;
+            document.querySelector(selectors.textInputforCreatingFormula).value = "";
+        }
+    }
+});
+
+
 
 
 
 
 const field = document.querySelector(selectors.formulasFolder);
 const template = document.querySelector(selectors.template);
-
-const createFormula = document.querySelector(selectors.createFormula);
-
-createFormula.addEventListener('click', () => {
-    if (document.querySelector(selectors.textInputforCreatingFormula).value == "") {
-        console.log("Write something ...");
-        alert("Write something ...");
+// CREATE FORMULA
+document.addEventListener('click', (event) => {
+    if (event.target.classList.contains(selectors.createFormula) || event.target.classList.contains(selectors.createFormulaFromEmptyState)) {
+        if (document.querySelector(selectors.textInputforCreatingFormula).value == "") {
+            console.log("Write something ...");
+            alert("Write something ...");
+        }
+        else{
+            const newElement = document.createElement("tr");
+            newElement.classList.add(selectors.formulaTemplate2);
+            newElement.innerHTML = template.innerHTML;
+            newElement.querySelector("." + selectors.link).innerText = document.querySelector(selectors.textInputforCreatingFormula).value;
+        
+            console.log(newElement);
+            field.appendChild(newElement);
+            document.querySelector(selectors.textInputforCreatingFormula).value = "";
+            emptyStateFunction(currentSettings);
+        }
     }
-    else{
-        const newElement = document.createElement("tr");
-        newElement.innerHTML = template.innerHTML;
-        newElement.querySelector(".linkToFormulasPage").innerText = document.querySelector(selectors.textInputforCreatingFormula).value;
-    
-        console.log(newElement);
-        field.appendChild(newElement);
-        document.querySelector(selectors.textInputforCreatingFormula).value = "";
+});
+
+
+
+const saveButton = document.querySelector(selectors.save);
+const discardButton = document.querySelector(selectors.discard);
+
+
+// SAVE
+saveButton.addEventListener('click', () => {
+    savedSettings.innerHTML = currentSettings.innerHTML;
+    console.log(savedSettings);
+})
+// DISCARD
+discardButton.addEventListener('click', () => {
+    document.querySelector(selectors.formulasFolder).innerHTML = savedSettings.innerHTML;
+    console.log(document.querySelector(selectors.formulasFolder));
+    emptyStateFunction(currentSettings);
+})
+
+
+
+// URL MANIPULATION
+document.addEventListener('click', (e) => {
+    if (e.target.classList.contains(selectors.link)) {
+
+        const child = e.target.parentElement.parentElement; // formula-template
+        const parent = child.parentElement; // formulaFolder
+        const children = Array.from(parent.children); // children of formulaFolder
+        const index = children.indexOf(child); // index of formula template
+        console.log(index);
+        const urlToMerge = "http://127.0.0.1:5500/WEB-Shopify--MIT-21-Mikhail-Melik-Kazarian/";
+        window.location.href = `${urlToMerge}formula.html${url.search}&id=${index}`;
     }
+})
+document.querySelector(selectors.home).addEventListener('click', () => {
+    window.location.href = "http://127.0.0.1:5500/WEB-Shopify--MIT-21-Mikhail-Melik-Kazarian/";
 })
