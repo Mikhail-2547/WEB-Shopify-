@@ -71,6 +71,7 @@ th, td {
     padding: 0.9rem;
 }
 
+
 .menu {
     background-color: $bg_color_white;
     width: 100%;
@@ -128,7 +129,7 @@ settings-page
     text-align: right;
     display: flex;
     gap: 0.5rem;
-    margin: 0 0.8rem;
+    margin: 0 0.5rem;
 }
 
 .link_to_pr {
@@ -136,7 +137,7 @@ settings-page
     display: flex;
     flex: 1;
     font-size: 1.1rem;
-    margin: 0 1rem;
+    margin: 0 0.5rem;
     gap: 0.8rem;
 }
 
@@ -178,9 +179,6 @@ settings-page
     border-radius: $bd_radius_1;
 }
 
-.discard:hover {
-    background-color: $discard_hover;
-}
 
 .create_formula {
     background-color: $bg_button_black;
@@ -196,6 +194,11 @@ settings-page
     border-radius: $bd_radius_1;
 }
 
+.discard:hover, .save:hover, .create_formula:hover {
+    opacity: 0.95;
+}
+
+
 .empty-state {
     @include containers;
     @include flex-center;
@@ -203,15 +206,15 @@ settings-page
     min-height: 26rem;
     min-width: 18rem;
 
-    max-width: 40vw;
-    height: 44vh;
+    max-width: 50vw;
+    height: 64vh;
     flex-direction: column;
     gap: 0.8rem;
 }
 
 .t_1 {
     margin: 0 0.5rem;
-    font-size: 1.1rem;
+    font-size: 1.8rem;
     font-weight: $font_wght;
     text-align: center;
 }
@@ -222,7 +225,7 @@ settings-page
     background-color: $bg_button_black;
     color: $button_color_0;
     font-weight: $font_wght;
-    padding: 0.4rem;
+    padding: 0.5rem;
     width: 2.2rem;
     border-radius: $bd_radius_small;
 }
@@ -238,10 +241,13 @@ settings-page
     padding: 1rem;
     max-width: 100%;
     background-color: $bg_color_white;
-    border-radius: 2rem;
-    margin: 1.4rem 2.2rem;
+    border-radius: $bd_radius;
+    margin: 1.4rem 2rem;
 }
 
+.linkToFormulasPage:hover {
+    cursor: pointer;
+}
 
 .table_formulas {
     width: 100%;
@@ -440,24 +446,20 @@ formulas-page
 }
 
 .btn-primary {
-    padding: 0.6rem;
     background-color: $bg_button_black;
     color: $button_color_0;
     border-radius: 0.3rem;
+    padding: 0.6rem;
 }
 
 .shablon {
     display:none;
 }
 
-.setting_em {
-    min-height: 26rem;
-    min-width: 18rem;
-
-    max-width: 50vw;
-    height: 64vh;
-}
-
 .hidden {
     display:none;
+}
+
+#home {
+    cursor: pointer;
 }

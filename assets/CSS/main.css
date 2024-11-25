@@ -301,7 +301,7 @@ settings-page
   text-align: right;
   display: flex;
   gap: 0.5rem;
-  margin: 0 0.8rem;
+  margin: 0 0.5rem;
 }
 
 .link_to_pr {
@@ -309,7 +309,7 @@ settings-page
   display: flex;
   flex: 1;
   font-size: 1.1rem;
-  margin: 0 1rem;
+  margin: 0 0.5rem;
   gap: 0.8rem;
 }
 
@@ -355,10 +355,6 @@ settings-page
   border-radius: 0.3rem;
 }
 
-.discard:hover {
-  background-color: #bef2ff;
-}
-
 .create_formula {
   background-color: rgb(25, 25, 25);
   padding: 0.2rem 1.2rem;
@@ -373,6 +369,10 @@ settings-page
   border-radius: 0.3rem;
 }
 
+.discard:hover, .save:hover, .create_formula:hover {
+  opacity: 0.95;
+}
+
 .empty-state {
   background-color: white;
   border-radius: 0.5rem;
@@ -383,15 +383,15 @@ settings-page
   margin: 0 auto;
   min-height: 26rem;
   min-width: 18rem;
-  max-width: 40vw;
-  height: 44vh;
+  max-width: 50vw;
+  height: 64vh;
   flex-direction: column;
   gap: 0.8rem;
 }
 
 .t_1 {
   margin: 0 0.5rem;
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   font-weight: bold;
   text-align: center;
 }
@@ -404,7 +404,7 @@ settings-page
   background-color: rgb(25, 25, 25);
   color: white;
   font-weight: bold;
-  padding: 0.4rem;
+  padding: 0.5rem;
   width: 2.2rem;
   border-radius: 0.5rem;
 }
@@ -421,8 +421,12 @@ settings-page
   padding: 1rem;
   max-width: 100%;
   background-color: white;
-  border-radius: 2rem;
-  margin: 1.4rem 2.2rem;
+  border-radius: 0.5rem;
+  margin: 1.4rem 2rem;
+}
+
+.linkToFormulasPage:hover {
+  cursor: pointer;
 }
 
 .table_formulas {
@@ -620,23 +624,20 @@ formulas-page
 }
 
 .btn-primary {
-  padding: 0.6rem;
   background-color: rgb(25, 25, 25);
   color: white;
   border-radius: 0.3rem;
+  padding: 0.6rem;
 }
 
 .shablon {
   display: none;
 }
 
-.setting_em {
-  min-height: 26rem;
-  min-width: 18rem;
-  max-width: 50vw;
-  height: 64vh;
-}
-
 .hidden {
   display: none;
+}
+
+#home {
+  cursor: pointer;
 }
