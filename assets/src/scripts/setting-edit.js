@@ -144,3 +144,4 @@ document.addEventListener('click', (e) => {
 document.querySelector(selectors.home).addEventListener('click', () => {
     window.location.href = "http://127.0.0.1:5500/WEB-Shopify--MIT-21-Mikhail-Melik-Kazarian/";
 })
+
