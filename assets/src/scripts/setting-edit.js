@@ -64,7 +64,7 @@ document.addEventListener('click', (event) => {
 });
 
 
-
+// EDIT
 document.addEventListener('click', (event) => {
     if (event.target.classList.contains(selectors.pen)) {
         if (document.querySelector(selectors.textInputforCreatingFormula).value == "") {
@@ -72,13 +72,14 @@ document.addEventListener('click', (event) => {
             alert("Write something ...");
         }
         else{
-            const sibling = event.target.parentElement.parentElement.firstElementChild;
-            console.log(sibling);
-            sibling.innerHTML = document.querySelector(selectors.textInputforCreatingFormula).value;
+            const sibling = event.target.parentElement.parentElement.firstElementChild.firstElementChild;
+            sibling.innerText = document.querySelector(selectors.textInputforCreatingFormula).value;
             document.querySelector(selectors.textInputforCreatingFormula).value = "";
         }
     }
 });
+
+
 
 
 
@@ -138,6 +139,7 @@ document.addEventListener('click', (e) => {
         const index = children.indexOf(child); // index of formula template
         console.log(index);
         const urlToMerge = "http://127.0.0.1:5500/WEB-Shopify--MIT-21-Mikhail-Melik-Kazarian/";
+        console.log
         window.location.href = `${urlToMerge}formula.html${url.search}&id=${index}`;
     }
 })
