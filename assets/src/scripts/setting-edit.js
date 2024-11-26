@@ -85,6 +85,7 @@ document.addEventListener('click', (event) => {
 
 
 
+
 const field = document.querySelector(selectors.formulasFolder);
 const template = document.querySelector(selectors.template);
 // CREATE FORMULA
