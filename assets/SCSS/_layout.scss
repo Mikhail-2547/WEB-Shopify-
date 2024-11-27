@@ -11,6 +11,12 @@
 
 @media  (max-width: 480px )  {
 
+    .menu {
+
+        max-height: none !important;
+
+    }
+
     .formulas_s {
         margin: 1.4rem 0.8rem !important;
         border-radius: $bd_radius_small !important;

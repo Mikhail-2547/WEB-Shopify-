@@ -46,7 +46,6 @@ filter-page
     font-weight: $font_wght;
     margin-top: 2rem;
     font-size: 2rem;
-    margin: 1rem;
 }
 
 .container {
@@ -75,13 +74,14 @@ th, td {
 .menu {
     background-color: $bg_color_white;
     width: 100%;
-    display: flex;
+    max-height: 3rem;
+    display:flex;
     margin: 1rem 0;
     border-radius: $bd_radius_1;
     box-shadow: $bx_shadow;
 }
 .menu_button {
-    padding: 0.8rem 1.6rem;
+    padding: 0.9rem 1.6rem;
 }
 
 .menu_button:hover {
@@ -102,8 +102,7 @@ th, td {
 }
 
 .menu_radio:checked + .menu_button {
-    background-color: $bg_radio_checked;
-    color: $color_radio_checked;
+    border-bottom: 3px solid rgb(255, 0, 0);
 }
 
 .menu_radio:first-child + .menu_button {
