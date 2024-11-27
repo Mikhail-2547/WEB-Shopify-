@@ -356,8 +356,8 @@ formulas-page
 }
 
 .books_content {
-    overflow: auto;
-    max-height: 19rem;
+    overflow: hidden;
+    max-height: 14.25rem;
     margin: 0.2rem 0;
 }
 
@@ -461,4 +461,21 @@ formulas-page
 
 #home {
     cursor: pointer;
+}
+
+.t-stylish{
+    padding: 0.5rem 0 0.5rem 0;
+    text-align: center;
+    color: $grey_color;
+    border-bottom: $bd_color_1;
+}
+
+.book_input {
+    display: none;
+}
+  
+.book_radio {
+    display: flex;
+    gap: 0.8rem;
+    width: 100%;
 }

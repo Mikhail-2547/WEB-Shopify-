@@ -30,7 +30,7 @@
     <div class="text_input">
       <div class="text_i_article">Title</div>
       <div class="text_i">
-        <input type="text" placeholder="Setting name" class="text_input_lol" />
+        <input type="text" placeholder="Setting name" class="text_input_lol" id="formulaTitleInput" />
       </div>
     </div>
     <div class="flex_0">
@@ -41,7 +41,7 @@
           <div class="article_of_sq">
             <div class="t_2 t_2_0">Formula</div>
             <div class="text_i">
-              <input type="text" placeholder="X * Y" class="text_input_lol" />
+              <input type="text" placeholder="X * Y" class="text_input_lol" id="formulaInput" />
             </div>
             <div class="t_2 t_2_0">
               X - cryptocurrency price, Y - product price
@@ -51,7 +51,7 @@
           <div class="article_of_sq">
             <div class="t_2 t_2_0">Frequency</div>
             <div class="text_i">
-              <input type="text" placeholder="1000" class="text_input_lol" />
+              <input type="text" placeholder="1000" class="text_input_lol" id="frequencyInput"/>
             </div>
             <div class="t_2 t_2_0">
               Cryptocurrency price update frequency. In milliseconds (like 1000ms
@@ -68,55 +68,20 @@
           <div class="books_container">
             <div class="search_0">
               <img src="assets/icons/Search.svg" alt="_search" />
-              <input type="search" placeholder="Search" class="text_input_lol" />
+              <input type="search" placeholder="Search" class="text_input_lol" id="searchCurrency" />
+            </div>
+            <div class="t-stylish">Select crypto from the list of search the one you need</div>
+            <div class="books_content hidden">
+              <div class="book_content hidden">
+                <label class="book_radio">
+                  <input type="radio" name="bookOption" value="content" class="book_input" />
+                  <img class="book_icon" src="assets/icons/Book.svg" alt="Book" />
+                  <span class="book_content_title">Content</span>
+                </label>
+              </div>
             </div>
   
-            <div class="books_content">
-  
-              <div class="book_content">
-                <img class="book_icon" src="assets/icons/Book.svg" alt="_book" />
-                <div class="book_content_title">Content</div>
-              </div>
-              <div class="book_content">
-                <img class="book_icon" src="assets/icons/Book.svg" alt="_book" />
-                <div class="book_content_title">Content</div>
-              </div>
-              <div class="book_content">
-                <img class="book_icon" src="assets/icons/Book.svg" alt="_book" />
-                <div class="book_content_title">Content</div>
-              </div>
-              <div class="book_content">
-                <img class="book_icon" src="assets/icons/Book.svg" alt="_book" />
-                <div class="book_content_title">Content</div>
-              </div>
-              <div class="book_content">
-                <img class="book_icon" src="assets/icons/Book.svg" alt="_book" />
-                <div class="book_content_title">Content</div>
-              </div>
-              <div class="book_content">
-                <img class="book_icon" src="assets/icons/Book.svg" alt="_book" />
-                <div class="book_content_title">Content</div>
-              </div>
-              <div class="book_content">
-                <img class="book_icon" src="assets/icons/Book.svg" alt="_book" />
-                <div class="book_content_title">Content</div>
-              </div>
-              <div class="book_content">
-                <img class="book_icon" src="assets/icons/Book.svg" alt="_book" />
-                <div class="book_content_title">Content</div>
-              </div>
-              <div class="book_content">
-                <img class="book_icon" src="assets/icons/Book.svg" alt="_book" />
-                <div class="book_content_title">Content</div>
-              </div>
-              <div class="book_content">
-                <img class="book_icon" src="assets/icons/Book.svg" alt="_book" />
-                <div class="book_content_title">Content1</div>
-              </div>
-  
-            </div>
-  
-            <button class="book_save_button">Save</button>
+            <button class="book_save_button" id="saveCurrency">Save</button>
   
           </div>
         </div>
@@ -240,6 +205,6 @@
       </div>
     </div>
     </div>
-    <script src="formula.js"></script>
+    <script src="assets/src/scripts/formula.js"></script>
   </body>
 </html>
