@@ -1,0 +1,158 @@
+{
+    "currencies": {
+        "BTC": {
+            "title": "Bitcoin",
+            "rate": 1
+        },
+        "USDT": {
+            "title": "Tether",
+            "rate": 12
+        },
+        "ETH": {
+            "title": "Ethereum",
+            "rate": 13
+        }
+    },
+    "settings": [
+        {
+            "id": 1,
+            "title": "BTC & USDT increase each 2 sec for T-Shirts",
+            "status": "active",
+            "formulas": [
+                {
+                    "id": 1,
+                    "title": "BTC in used for T-Shirts",
+                    "formula": "X * Y",
+                    "frequency": 2000,
+                    "currency": "BTC",
+                    "targets": {
+                        "collectionsIds": [
+                            1,
+                            2
+                        ],
+                        "products": [
+                            {
+                                "id": 1,
+                                "variantsIds": [
+                                    1,
+                                    2
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 1,
+                    "title": "USDT in used for hoodies",
+                    "formula": "X + Y",
+                    "frequency": 2000,
+                    "currency": "USDT",
+                    "targets": {
+                        "collectionsIds": [
+                            3,
+                            4
+                        ],
+                        "products": [
+                            {
+                                "id": 3,
+                                "variants": [1,2,3]
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "collections": [
+        {
+            "id": 1,
+            "title": "T-Shirts"
+        },
+        {
+            "id": 2,
+            "title": "Hoodies"
+        },
+        {
+            "id": 3,
+            "title": "Socks"
+        },
+        {
+            "id": 4,
+            "title": "Caps"
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "title": "Product 1",
+            "price": 11,
+            "variants": [
+                {
+                    "id": 1,
+                    "title": "Black",
+                    "price": 11
+                },
+                {
+                    "id": 2,
+                    "title": "Red",
+                    "price": 12
+                },
+                {
+                    "id": 3,
+                    "title": "White",
+                    "price": 13
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Product 2",
+            "price": 15,
+            "variants": []
+        },
+        {
+            "id": 3,
+            "title": "Product 3",
+            "price": 20.99,
+            "variants": [
+                {
+                    "id": 1,
+                    "title": "Black",
+                    "price": 29.99
+                },
+                {
+                    "id": 2,
+                    "title": "Red",
+                    "price": 20.99
+                },
+                {
+                    "id": 3,
+                    "title": "White",
+                    "price": 29.99
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Product 4",
+            "price": 50,
+            "variants": [
+                {
+                    "id": 1,
+                    "title": "XXL",
+                    "price": 55.99
+                },
+                {
+                    "id": 2,
+                    "title": "XL",
+                    "price": 51.99
+                },
+                {
+                    "id": 3,
+                    "title": "L",
+                    "price": 50
+                }
+            ]
+        }
+    ]
+}
