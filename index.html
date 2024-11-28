@@ -3,75 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/CSS/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    
-    <title>Shopify</title>
+    <title>Document</title>
 </head>
-
 <body>
-
-    <section class="container">
-        <div class="nav">
-            <h1 class="settings">Settings</h1>
-            <div class="header-controls">
-                <a href="setting.html" class="btn-primary btn" aria-controls="create-setting">
-                    Create setting
-                </a>
-            </div>
-        </div>
-        <div class="menu">
-            <input type="radio" id="btn_all" name="menu" class="menu_radio" checked>
-            <label for="btn_all" class="menu_button">All settings</label>
-        
-            <input type="radio" id="btn_published" name="menu" class="menu_radio">
-            <label for="btn_published" class="menu_button">Published</label>
-        
-            <input type="radio" id="btn_btc" name="menu" class="menu_radio">
-            <label for="btn_btc" class="menu_button">BTC</label>
-        
-            <input type="radio" id="btn_usdt" name="menu" class="menu_radio">
-            <label for="btn_usdt" class="menu_button">USDT</label>
-        
-            <input type="radio" id="btn_ton" name="menu" class="menu_radio">
-            <label for="btn_ton" class="menu_button">TON</label>
-        </div>
-
-        <div class="empty-state">
-            <div class="image"><img class="image_0" src="assets/icons/Illustration.svg" alt="EMPTY"></div>
-            <div class="t_1">Oopsie, seems that you have no settings yet</div>
-            <div class="t_2">Create your first setting!</div>
-            <button href="setting.html" class="b_0" aria-controls="create-setting">+</button>
-        </div>
-        <!-- shablon -->
-        <table class="table settings-table">
-            <thead>
-                <tr>
-                <div class="s_n">
-                    <th>Setting-name</th>
-                    <th>Status</th>
-                </div>
-                </tr>
-            </thead>
-            <tbody class="settings-list">
-                <tr class="setting-line hidden" id="setting-line-template">
-                    <td class="content">
-                        <a class="content_link setting-link" href="setting.html">
-                            2 sec for T-Shirts
-                        </a>
-                    </td>
-                    <td class="status">
-                        <div class="st_active status-badge setting-status-badge ">active</div>
-                    </td>
-                    <td>
-                        <img class="trash" src="assets/icons/Trash.svg" alt="Delete" aria-controls="create-remove">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <script src="assets/src/scripts/index.js"></script>
+    <div id="app">Hello World!!!</div>
+    <script type="module" src="src/main.js"></script>
 </body>
 </html>
