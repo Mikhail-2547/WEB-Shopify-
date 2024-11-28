@@ -18,6 +18,7 @@ if (state){
 }
 const url = window.location.href;
 const params = getUrlParams(url);
+console
 const settingId = params.settingId;
 console.log(settingId);
 const currentSetting = state.settings.find(setting => setting.id == settingId);
